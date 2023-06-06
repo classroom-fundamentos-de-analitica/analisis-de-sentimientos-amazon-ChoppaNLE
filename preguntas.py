@@ -8,9 +8,10 @@ o indterminados (=NULL). En este taller se construir√° un modelo de clasificaci√
 Naive Bayes para determinar el sentimiento de un comentario.
 
 """
+
 import numpy as np
 import pandas as pd
-
+from sklearn.metrics import confusion_matrix
 
 def pregunta_01():
     """
@@ -158,7 +159,7 @@ def pregunta_05():
     """
 
     # Importe confusion_matrix
-    from sklearn.metrics import confusion_matrix
+    
 
     # Obtenga el pipeline de la pregunta 3.
     gridSearchCV = pregunta_04()
